@@ -429,8 +429,7 @@ html.theme-transition *::after {
 }
 
 ::view-transition-new(root) {
-  mask-image: url('/theme-mask.svg');
-  mask-repeat: no-repeat;
+  clip-path: circle(0 at var(--mx, 50vw) var(--my, 50vh));
   animation: theme-circle-scale 0.9s var(--expo-out) both;
 }
 
@@ -441,15 +440,8 @@ html.theme-transition *::after {
 }
 
 @keyframes theme-circle-scale {
-  from {
-    mask-size: 0;
-    mask-position: var(--mx, 50vw) var(--my, 50vh);
-  }
   to {
-    mask-size: 300vmax;
-    mask-position:
-      calc(var(--mx, 50vw) - 150vmax)
-      calc(var(--my, 50vh) - 150vmax);
+    clip-path: circle(150vmax at var(--mx, 50vw) var(--my, 50vh));
   }
 }
 

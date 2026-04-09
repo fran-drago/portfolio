@@ -445,6 +445,33 @@ html.theme-transition *::after {
   }
 }
 
+/* ─── Film grain overlay ─── */
+.grain {
+  position: fixed;
+  inset: -100%;
+  width: 300%;
+  height: 300%;
+  background-image: url('/grain.png');
+  opacity: 0.08;
+  pointer-events: none;
+  z-index: 9999;
+  animation: grain-shift 8s steps(10) infinite;
+}
+
+@keyframes grain-shift {
+  0%   { transform: translate(0,     0)    }
+  10%  { transform: translate(-5%,  -10%) }
+  20%  { transform: translate(-15%, -20%) }
+  30%  { transform: translate(-5%,  -10%) }
+  40%  { transform: translate(-15%, -20%) }
+  50%  { transform: translate(-5%,  -10%) }
+  60%  { transform: translate(-15%, -20%) }
+  70%  { transform: translate(-5%,  -10%) }
+  80%  { transform: translate(-15%, -20%) }
+  90%  { transform: translate(-5%,  -10%) }
+  100% { transform: translate(-15%, -20%) }
+}
+
 /* ─── Link underline — scaleX from left ─── */
 .link-underline {
   position: relative;

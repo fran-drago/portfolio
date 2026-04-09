@@ -52,6 +52,7 @@ export default async function RootLayout({
         <Script id="theme-init" strategy="beforeInteractive">{`(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||((!t||t==='system')&&window.matchMedia('(prefers-color-scheme: dark)').matches)){document.documentElement.classList.add('dark')}}catch(e){}})();`}</Script>
       </head>
       <body className="min-h-full bg-background text-foreground theme-transition">
+        <div className="grain" aria-hidden="true" />
         <ThemeProvider>
           <LanguageProvider>
             <ScrollBlurOverlay />

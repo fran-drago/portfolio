@@ -1,0 +1,438 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  /* Colors */
+  --color-background:            var(--background);
+  --color-foreground:            var(--foreground);
+  --color-primary:               var(--primary);
+  --color-secondary:             var(--secondary);
+  --color-secondary-foreground:  var(--secondary-foreground);
+  --color-muted-foreground:      var(--muted-foreground);
+  --color-destructive:           var(--destructive);
+  --color-base:                  var(--base);
+  --color-border-subtle:         var(--border-subtle);
+  --color-border-default:        var(--border-default);
+  --color-ring:                  var(--ring);
+  --color-primary-subtle:        var(--primary-subtle);
+
+  /* Fonts */
+  --font-sans:              var(--font-sans);
+  --font-mono:              var(--font-geist-mono);
+  --font-heading:           var(--font-heading);
+
+  /* Letter spacing (Figma → Tailwind tracking-* utilities) */
+  --tracking-tight-heading: var(--letter-spacing-tight-heading);
+  --tracking-wide-section:  var(--letter-spacing-widest);
+
+  /* Radius (Figma → Tailwind rounded-* utilities) */
+  --radius-2:               var(--radius-2);
+  --radius-xs:              var(--radius-xs);
+  --radius-md:              var(--radius-md);
+  --radius-12:              var(--radius-12);
+  --radius-16:              var(--radius-16);
+  --radius-full:            var(--radius-full);
+}
+
+/* ─── Primitives ─── */
+:root {
+  /* Neutral (50–950) */
+  --neutral-50:  #f9fafb;
+  --neutral-100: #f4f4f5;
+  --neutral-200: #e4e4e7;
+  --neutral-300: #d4d4d8;
+  --neutral-400: #9f9fa9;
+  --neutral-500: #71717b;
+  --neutral-600: #52525c;
+  --neutral-700: #3f3f46;
+  --neutral-800: #27272a;
+  --neutral-900: #18181b;
+  --neutral-950: #09090b;
+
+  /* Blue (50–950) */
+  --blue-50:  #eff6ff;
+  --blue-100: #dbeafe;
+  --blue-200: #bedbff;
+  --blue-300: #8ec5ff;
+  --blue-400: #51a2ff;
+  --blue-500: #2b7fff;
+  --blue-600: #155dfc;
+  --blue-700: #1447e6;
+  --blue-800: #193cb8;
+  --blue-900: #1c398e;
+  --blue-950: #162456;
+
+  /* Green (50–950) — steps 400 and 700 from Figma; others Tailwind v4 fill-ins */
+  --green-50:  oklch(0.982 0.018 155.826);
+  --green-100: oklch(0.962 0.044 156.743);
+  --green-200: oklch(0.925 0.084 155.995);
+  --green-300: oklch(0.871 0.150 154.449);
+  --green-400: #05df72;
+  --green-500: oklch(0.723 0.219 149.579);
+  --green-600: oklch(0.627 0.194 149.214);
+  --green-700: #008235;
+  --green-800: oklch(0.448 0.119 151.328);
+  --green-900: oklch(0.393 0.095 152.535);
+  --green-950: oklch(0.266 0.065 152.934);
+
+  /* Red (50–950) — steps 400 and 600 from Figma; others Tailwind v4 fill-ins */
+  --red-50:  oklch(0.971 0.013 17.38);
+  --red-100: oklch(0.936 0.032 17.72);
+  --red-200: oklch(0.885 0.062 18.33);
+  --red-300: oklch(0.808 0.114 19.57);
+  --red-400: #ff6467;
+  --red-500: oklch(0.637 0.237 25.33);
+  --red-600: #e7000b;
+  --red-700: oklch(0.505 0.213 27.52);
+  --red-800: oklch(0.444 0.177 26.90);
+  --red-900: oklch(0.396 0.141 25.72);
+  --red-950: oklch(0.258 0.092 26.04);
+}
+
+/* ─── Tokens ─── */
+:root {
+  /* Colors — Figma Tokens collection (Light) */
+  --background:              var(--neutral-50);
+  --foreground:              var(--neutral-950);
+  --primary:                 var(--blue-700);
+  --primary-subtle:          var(--blue-600);
+  --secondary:               var(--neutral-100);
+  --secondary-foreground:    var(--neutral-600);
+  --muted-foreground:        var(--neutral-400);
+  --destructive:             var(--red-600);
+  --base:                    #ffffff;
+  --border-subtle:           var(--neutral-200);
+  --border-default:          var(--neutral-300);
+  --ring:                    var(--blue-700);
+
+  /* Semantic state */
+  --positive:         var(--green-700);
+  --positive-pulse:   color-mix(in srgb, var(--green-700) 50%, transparent);
+
+  /* Font sizes — Figma Tokens collection */
+  --font-size-xs:      0.75rem;    /* 12px */
+  --font-size-sm:      0.875rem;   /* 14px */
+  --font-size-base:    1rem;       /* 16px */
+  --font-size-lg:      1.125rem;   /* 18px */
+  --font-size-xl:      1.5rem;     /* 24px — typography/text/xl */
+
+  /* Line heights — Figma Tokens collection */
+  --line-height-xs:    1rem;       /* 16px */
+  --line-height-sm:    1.25rem;    /* 20px */
+  --line-height-md:    1.5rem;     /* 24px */
+  --line-height-lg:    1.75rem;    /* 28px — typography/leading/lg */
+  --line-height-xl:    2rem;       /* 32px — typography/leading/xl */
+  --line-height-2xl:   3rem;       /* 48px */
+
+  /* Letter spacing — Figma Tokens collection */
+  --letter-spacing-default:        0em;
+  --letter-spacing-tight-heading: -0.4px;    /* typography/tracking/tight — used by display/hero + heading/md */
+  --letter-spacing-widest:         1.6px;    /* typography/tracking/widest */
+
+  /* Spacing — Figma Tokens collection */
+  --spacing-2:   0.125rem;   /* 2px */
+  --spacing-4:   0.25rem;    /* 4px */
+  --spacing-6:   0.375rem;   /* 6px */
+  --spacing-8:   0.5rem;     /* 8px */
+  --spacing-10:  0.625rem;   /* 10px */
+  --spacing-12:  0.75rem;    /* 12px */
+  --spacing-14:  0.875rem;   /* 14px */
+  --spacing-16:  1rem;       /* 16px */
+  --spacing-20:  1.25rem;    /* 20px */
+  --spacing-24:  1.5rem;     /* 24px */
+  --spacing-28:  1.75rem;    /* 28px */
+  --spacing-32:  2rem;       /* 32px */
+  --spacing-40:  2.5rem;     /* 40px */
+  --spacing-64:  4rem;       /* 64px */
+
+  /* Radius — Figma Tokens collection */
+  --radius-2:    0.125rem;   /* 2px */
+  --radius-xs:   0.25rem;    /* 4px */
+  --radius-md:   0.5rem;     /* 8px */
+  --radius-12:   0.75rem;    /* 12px */
+  --radius-16:   1rem;       /* 16px */
+  --radius-full: 9999px;     /* pill / badge */
+
+  /* Layout */
+  --content-max:      35.25rem;  /* 564px — Figma Main container */
+  --section-gap:      clamp(4.5rem, 9vw, 7rem);
+  --page-padding-x:   clamp(1.25rem, 5vw, 2rem);
+
+  /* Easing */
+  --ease-out:         cubic-bezier(0.25, 0, 0, 1);
+}
+
+.dark {
+  /* Colors — Figma Tokens collection (Dark) */
+  --background:           var(--neutral-950);
+  --foreground:           var(--neutral-50);
+  --primary:              var(--blue-400);
+  --primary-subtle:       var(--blue-500);
+  --secondary:            var(--neutral-800);
+  --secondary-foreground: var(--neutral-400);
+  --muted-foreground:     var(--neutral-600);
+  --destructive:          var(--red-400);
+  --base:                 #000000;
+  --border-subtle:        var(--neutral-900);
+  --border-default:       var(--neutral-800);
+  --ring:                 var(--blue-400);
+
+  /* Semantic state */
+  --positive:         var(--green-400);
+  --positive-pulse:   color-mix(in srgb, var(--green-400) 50%, transparent);
+}
+
+/* ─── Base styles ─── */
+@layer base {
+  * {
+    @apply border-border-subtle outline-ring/50;
+  }
+
+  html {
+    @apply font-sans;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    scrollbar-gutter: stable;
+  }
+
+  :focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-ring;
+    border-radius: var(--radius-xs);
+  }
+}
+
+/* ─── Theme transition — color only, never layout ─── */
+html.theme-transition *,
+html.theme-transition *::before,
+html.theme-transition *::after {
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.15s ease,
+    fill 0.15s ease;
+}
+
+/* ─── Animations ─── */
+@keyframes menu-in {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes menu-out {
+  from { opacity: 1; transform: translateY(0); }
+  to   { opacity: 0; transform: translateY(-6px); }
+}
+
+.animate-menu-in  { animation: menu-in  180ms var(--ease-out) both; }
+.animate-menu-out { animation: menu-out 140ms ease-in both; }
+
+@keyframes overlay-in  { from { opacity: 0; } to { opacity: 1; } }
+@keyframes overlay-out { from { opacity: 1; } to { opacity: 0; } }
+
+.animate-overlay-in  { animation: overlay-in  180ms var(--ease-out) both; }
+.animate-overlay-out { animation: overlay-out 140ms ease-in both; }
+
+@keyframes hero-reveal {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes dot-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 var(--positive-pulse); }
+  55%       { box-shadow: 0 0 0 5px transparent; }
+}
+
+.animate-hero-reveal {
+  animation: hero-reveal 0.75s var(--ease-out) both;
+}
+.animate-hero-reveal-delay-1 { animation-delay: 60ms; }
+.animate-hero-reveal-delay-2 { animation-delay: 160ms; }
+.animate-hero-reveal-delay-3 { animation-delay: 240ms; }
+.animate-hero-reveal-delay-4 { animation-delay: 320ms; }
+
+.animate-pulse-dot {
+  animation: dot-pulse 2.6s ease infinite;
+  animation-delay: 1.2s;
+}
+
+/* ─── Scroll reveal ─── */
+@media (prefers-reduced-motion: no-preference) {
+  [data-reveal] {
+    opacity: 0;
+    transform: translateY(12px);
+    transition:
+      opacity 0.6s var(--ease-out),
+      transform 0.6s var(--ease-out);
+    transition-delay: var(--reveal-delay, 0ms);
+  }
+
+  [data-reveal].is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-hero-reveal,
+  .animate-pulse-dot,
+  .animate-menu-in,
+  .animate-menu-out,
+  .animate-overlay-in,
+  .animate-overlay-out {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  *, *::before, *::after {
+    transition: none !important;
+  }
+}
+
+/* ─── Semantic color utilities ─── */
+.text-positive { color: var(--positive); }
+.bg-positive   { background-color: var(--positive); }
+
+/* ─── Type utilities — Figma type/* tokens ─── */
+
+/* type/heading/md — Bricolage Grotesque, 20px/28px, medium, tight tracking */
+.type-heading-md {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;                           /* 20px — typography/text/lg */
+  line-height: var(--line-height-lg);           /* 28px — typography/leading/lg */
+  letter-spacing: var(--letter-spacing-tight-heading);
+  font-weight: 500;
+}
+
+/* type/display/hero — Bricolage Grotesque, medium, tight tracking
+   mobile: 20px/28px (matches Responsive frame) → desktop: 24px/32px (matches Desktop frame) */
+.type-display-hero {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;                          /* 20px — mobile */
+  line-height: var(--line-height-lg);          /* 28px */
+  letter-spacing: var(--letter-spacing-tight-heading);
+  font-weight: 500;
+}
+
+@media (min-width: 640px) {
+  .type-display-hero {
+    font-size: var(--font-size-xl);            /* 24px — desktop */
+    line-height: var(--line-height-xl);        /* 32px */
+  }
+}
+
+/* type/label/section — 14px/20px, medium, widest tracking, uppercase */
+.type-label-section {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-sm);
+  letter-spacing: var(--letter-spacing-widest);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.type-nav-link {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-sm);
+  letter-spacing: var(--letter-spacing-default);
+  font-weight: 400;
+}
+
+.type-body-base {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-md);
+  letter-spacing: var(--letter-spacing-default);
+  font-weight: 400;
+}
+
+.type-body-base-medium {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-md);
+  letter-spacing: var(--letter-spacing-default);
+  font-weight: 500;
+}
+
+.type-body-lg {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-md);
+  letter-spacing: var(--letter-spacing-default);
+  font-weight: 500;
+}
+
+.type-body-sm {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-sm);
+  letter-spacing: var(--letter-spacing-default);
+  font-weight: 400;
+}
+
+.type-body-sm-medium {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-sm);
+  letter-spacing: var(--letter-spacing-default);
+  font-weight: 500;
+}
+
+.type-body-xs {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-xs);
+  letter-spacing: var(--letter-spacing-default);
+  font-weight: 400;
+}
+
+/* ─── Tooltip reveal — slides up from below ─── */
+.tooltip {
+  opacity: 0;
+  transform: translateY(var(--spacing-4)) scale(0.96);
+  transition:
+    opacity 100ms ease-in,
+    transform 100ms ease-in;
+}
+
+.group:hover .tooltip {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  transition:
+    opacity 200ms var(--ease-out),
+    transform 200ms var(--ease-out);
+  transition-delay: 180ms;
+}
+
+/* ─── Link underline — scaleX from left ─── */
+.link-underline {
+  position: relative;
+  text-decoration: none;
+}
+
+.link-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.18s ease;
+}
+
+.link-underline:hover::after {
+  transform: scaleX(1);
+}

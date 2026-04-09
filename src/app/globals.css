@@ -431,7 +431,7 @@ html.theme-transition *::after {
 ::view-transition-new(root) {
   mask-image: url('/theme-mask.svg');
   mask-repeat: no-repeat;
-  animation: theme-circle-scale 1.1s cubic-bezier(0.4, 0, 0.2, 1) both;
+  animation: theme-circle-scale 0.9s var(--expo-out) both;
 }
 
 ::view-transition-old(root),

@@ -414,6 +414,45 @@ html.theme-transition *::after {
   transition-delay: 180ms;
 }
 
+/* ─── Theme transition — circle-with-blur reveal ─── */
+:root {
+  --expo-out: linear(
+    0 0%, 0.1684 2.66%, 0.3165 5.49%, 0.446 8.52%, 0.5581 11.78%,
+    0.6535 15.29%, 0.7341 19.11%, 0.8011 23.3%, 0.8557 27.93%,
+    0.8962 32.68%, 0.9283 38.01%, 0.9529 44.08%, 0.9711 51.14%,
+    0.9833 59.06%, 0.9918 68.74%, 1 100%
+  );
+}
+
+::view-transition-group(root) {
+  animation-timing-function: var(--expo-out);
+}
+
+::view-transition-new(root) {
+  mask-image: url('/theme-mask.svg');
+  mask-repeat: no-repeat;
+  animation: theme-circle-scale 0.9s var(--expo-out) both;
+}
+
+::view-transition-old(root),
+.dark::view-transition-old(root) {
+  animation: none;
+  z-index: -1;
+}
+
+@keyframes theme-circle-scale {
+  from {
+    mask-size: 0;
+    mask-position: var(--mx, 50vw) var(--my, 50vh);
+  }
+  to {
+    mask-size: 300vmax;
+    mask-position:
+      calc(var(--mx, 50vw) - 150vmax)
+      calc(var(--my, 50vh) - 150vmax);
+  }
+}
+
 /* ─── Link underline — scaleX from left ─── */
 .link-underline {
   position: relative;

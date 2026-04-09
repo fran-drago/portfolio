@@ -25,7 +25,7 @@ export default function Home() {
         <Toggles />
       </div>
       <div className="py-[var(--spacing-24)]">
-        <main className="mx-auto w-full max-w-[var(--content-max)] overflow-hidden">
+        <main className="relative z-[2] mx-auto w-full max-w-[var(--content-max)] overflow-hidden">
           <Hero />
           <Experience />
           <Projects />

@@ -35,7 +35,7 @@ const es = {
   },
 
   /* ─── About ─── */
-  bio: "Hola 👋, soy Fran Drago — diseño productos que conectan con personas y negocio, y construyo los sistemas que los sostienen. Product & Design System Designer con base en Buenos Aires. Opero end-to-end: discovery, prototipado, testing y handoff.",
+  bio: "Hola 👋, soy Fran Drago. Diseño productos que conectan con personas y negocio, y construyo los sistemas que los sostienen. Product & Design System Designer de Buenos Aires. Opero end-to-end: discovery, prototipado, testing y handoff.",
 
   /* ─── Experience ─── */
   experience: [
@@ -47,9 +47,9 @@ const es = {
         "Plataforma argentina de e-commerce. Founding member del equipo de producto. Lideré la creación del Design System desde cero, desempeñándome también como Product Designer sobre flujos clave.",
       bullets: [
         "Construí el design system desde cero con foco en escalabilidad, iterándolo y manteniéndolo para reducir decisiones y aumentar la velocidad del equipo.",
-        "Definí la estructura de trabajo del equipo UX en Figma: carpetas, versionado, ready-for-dev checklist y naming — un flujo de entrega claro y replicable.",
+        "Definí la estructura de trabajo del equipo UX en Figma: carpetas, versionado, ready-for-dev checklist y naming. Un flujo de entrega claro y replicable.",
         "Colaboré con desarrollo para asegurar consistencia entre diseño e implementación.",
-        "Rediseñé el flujo de My Account de punta a punta — UI, arquitectura y funcionalidades — resolviendo el dolor visual y construyendo una base sólida para nuevas funcionalidades.",
+        "Rediseñé el flujo de My Account de punta a punta (UI, arquitectura y funcionalidades), resolviendo el dolor visual y construyendo una base sólida para nuevas funcionalidades.",
         "Referente del equipo UX en buenas prácticas de uso de Figma: autolayout, mobile-first, adopción de variables y consistencia del diseño.",
       ],
     },
@@ -183,7 +183,7 @@ const es = {
   error: {
     code: "Error",
     title: "Algo se rompió",
-    description: "El sistema encontró un componente inesperado. No es tu problema — es nuestro bug.",
+    description: "El sistema encontró un componente inesperado. No es tu problema, es nuestro bug.",
     tryAgain: "Intentar de nuevo",
     backHome: "Volver al inicio",
   },
@@ -225,7 +225,7 @@ const en: typeof es = {
   },
 
   /* ─── About ─── */
-  bio: "Hi 👋, I'm Fran Drago — I design products that connect people with business goals, and build the systems that sustain them. Product & Design System Designer based in Buenos Aires. Operating end-to-end: discovery, prototyping, testing and handoff.",
+  bio: "Hi 👋, I'm Fran Drago. I design products that connect people with business goals, and build the systems that sustain them. Product & Design System Designer based in Buenos Aires. Operating end-to-end: discovery, prototyping, testing and handoff.",
 
   /* ─── Experience ─── */
   experience: [
@@ -237,9 +237,9 @@ const en: typeof es = {
         "Argentine e-commerce platform. Founding member of the product team. Led the creation of the Design System from scratch, also acting as Product Designer on key flows.",
       bullets: [
         "Built the design system from scratch with a focus on scalability, iterating and maintaining it to reduce decisions and increase team velocity.",
-        "Defined the UX team's workflow in Figma: folder structure, versioning, ready-for-dev checklist and naming — a clear, replicable delivery process.",
+        "Defined the UX team's workflow in Figma: folder structure, versioning, ready-for-dev checklist and naming. A clear, replicable delivery process.",
         "Collaborated with development to ensure consistency between design and implementation.",
-        "Redesigned the My Account flow end-to-end — UI, architecture and features — resolving visual pain points and building a solid foundation for new functionality.",
+        "Redesigned the My Account flow end-to-end (UI, architecture and features), resolving visual pain points and building a solid foundation for new functionality.",
         "UX team reference for Figma best practices: auto layout, mobile-first, variable adoption and design consistency.",
       ],
     },
@@ -373,7 +373,7 @@ const en: typeof es = {
   error: {
     code: "Error",
     title: "Something broke",
-    description: "The system encountered an unexpected component. Not your fault — our bug.",
+    description: "The system encountered an unexpected component. Not your fault, our bug.",
     tryAgain: "Try again",
     backHome: "Go back home",
   },

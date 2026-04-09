@@ -20,7 +20,7 @@ export default function Home() {
     <ScrollRevealProvider>
       <div
         className="fixed top-[var(--spacing-24)] right-[var(--spacing-24)]"
-        style={{ zIndex: 40 }}
+        className="z-40"
       >
         <Toggles />
       </div>

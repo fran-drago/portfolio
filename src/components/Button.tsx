@@ -28,7 +28,7 @@ export function Button({ label, icon = false, href, onClick }: ButtonProps) {
 
   if (href) {
     return (
-      <a href={href} className={className}>
+      <a href={href} className={className} rel="noopener noreferrer">
         {content}
       </a>
     );

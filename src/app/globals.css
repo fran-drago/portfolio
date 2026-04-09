@@ -452,7 +452,7 @@ html.theme-transition *::after {
   width: 300%;
   height: 300%;
   background-image: url('/grain.png');
-  opacity: 0.08;
+  opacity: 0.05;
   pointer-events: none;
   z-index: 1;
   animation: grain-shift 8s steps(10) infinite;

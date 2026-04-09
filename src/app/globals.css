@@ -454,7 +454,7 @@ html.theme-transition *::after {
   background-image: url('/grain.png');
   opacity: 0.08;
   pointer-events: none;
-  z-index: 9999;
+  z-index: 1;
   animation: grain-shift 8s steps(10) infinite;
 }
 

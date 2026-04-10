@@ -1,7 +1,7 @@
 "use client";
 
 import { HugeiconsIcon } from "@hugeicons/react";
-import { FileDownloadIcon } from "@hugeicons/core-free-icons";
+import { File01Icon } from "@hugeicons/core-free-icons";
 
 interface ButtonProps {
   label: string;
@@ -21,7 +21,7 @@ export function Button({ label, icon = false, href, external = false, onClick }:
       </span>
       {icon && (
         <span className="flex items-center shrink-0 p-[2px] w-5">
-          <HugeiconsIcon icon={FileDownloadIcon} size={16} color="currentColor" />
+          <HugeiconsIcon icon={File01Icon} size={16} color="currentColor" />
         </span>
       )}
     </>

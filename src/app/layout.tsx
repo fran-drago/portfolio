@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { cookies } from "next/headers";
 import { Inter, Bricolage_Grotesque } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { LanguageProvider } from "@/contexts/LanguageContext";
@@ -47,8 +48,11 @@ export default async function RootLayout({
       suppressHydrationWarning
       className={`${inter.variable} ${bricolageGrotesque.variable} h-full antialiased`}
     >
+      <head>
+        <Script id="theme-init" strategy="beforeInteractive">{`(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||((!t||t==='system')&&window.matchMedia('(prefers-color-scheme: dark)').matches)){document.documentElement.classList.add('dark')}}catch(e){}})();`}</Script>
+      </head>
       <body className="min-h-full bg-background text-foreground theme-transition">
-        <ThemeProvider>
+<ThemeProvider>
           <LanguageProvider>
             <ScrollBlurOverlay />
             {children}

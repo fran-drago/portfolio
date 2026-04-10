@@ -84,7 +84,12 @@
       "Bash(npm show:*)",
       "WebFetch(domain:21st.dev)",
       "mcp__figma-console__figma_capture_screenshot",
-      "mcp__figma-console__figma_get_text_styles"
+      "mcp__figma-console__figma_get_text_styles",
+      "Bash(gh repo:*)",
+      "WebFetch(domain:github.com)",
+      "Bash(echo \"EXIT:$?\")",
+      "Bash(cat node_modules/next-themes/dist/docs/MIGRATION.md)",
+      "Bash(ls node_modules/next-themes/dist/docs/)"
     ]
   },
   "enableAllProjectMcpServers": true,

@@ -40,6 +40,34 @@ const es = {
     "Diseño para personas, entendiendo los objetivos del negocio.",
   ],
 
+  /* ─── Projects ─── */
+  projects: [
+    {
+      title: "Epic Games Store",
+      description: "Investigación UX para identificar insights y proponer mejoras.",
+      image: "/project-egs.png",
+      href: "https://www.behance.net/gallery/187542937/Epic-Games-Store-UX-Research-Case-Study",
+    },
+    {
+      title: "HBO Max",
+      description: "Rediseño y prototipo de la plataforma de streaming.",
+      image: "/project-hbo.png",
+      href: "https://www.behance.net/gallery/183374655/HBO-Max-Rediseno-de-plataforma",
+    },
+    {
+      title: "Legere",
+      description: "UX Writing y brief de contenidos con foco en microcopy.",
+      image: "/project-legere.png",
+      href: "https://www.behance.net/gallery/186021879/Legere-UX-Writing-(Case-Study)",
+    },
+    {
+      title: "Joined.gg",
+      description: "Red social para conectar jugadores en línea.",
+      image: "/project-joined.png",
+      href: "https://www.behance.net/gallery/162380141/JoinedGG-Presentacion-final",
+    },
+  ],
+
   /* ─── Experience ─── */
   experience: [
     {
@@ -242,6 +270,34 @@ const en: typeof es = {
     "Hi 👋, I'm Fran Drago. Product & Design System Designer based in Buenos Aires.",
     "I build scalable design systems and operate end-to-end with intention, from the first wireframe to handoff.",
     "I design for people, understanding business goals.",
+  ],
+
+  /* ─── Projects ─── */
+  projects: [
+    {
+      title: "Epic Games Store",
+      description: "UX research to identify insights and propose platform improvements.",
+      image: "/project-egs.png",
+      href: "https://www.behance.net/gallery/187542937/Epic-Games-Store-UX-Research-Case-Study",
+    },
+    {
+      title: "HBO Max",
+      description: "Redesign and prototype of the streaming platform.",
+      image: "/project-hbo.png",
+      href: "https://www.behance.net/gallery/183374655/HBO-Max-Rediseno-de-plataforma",
+    },
+    {
+      title: "Legere",
+      description: "UX Writing and content brief focused on microcopy.",
+      image: "/project-legere.png",
+      href: "https://www.behance.net/gallery/186021879/Legere-UX-Writing-(Case-Study)",
+    },
+    {
+      title: "Joined.gg",
+      description: "Social platform to connect online players.",
+      image: "/project-joined.png",
+      href: "https://www.behance.net/gallery/162380141/JoinedGG-Presentacion-final",
+    },
   ],
 
   /* ─── Experience ─── */

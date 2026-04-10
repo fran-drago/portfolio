@@ -41,16 +41,15 @@ const es = {
   experience: [
     {
       company: "Altatienda",
-      role: "Product & Design System Designer",
+      role: "Product Designer & Design System Designer",
       period: "2024 – 2026",
       description:
-        "Plataforma argentina de e-commerce. Founding member del equipo de producto. Lideré la creación del Design System desde cero, desempeñándome también como Product Designer sobre flujos clave.",
+        "Plataforma argentina de e-commerce. Founding member del equipo de producto, con rol dual: Design System Designer y Product Designer sobre flujos clave.",
       bullets: [
-        "Construí el design system desde cero con foco en escalabilidad, iterándolo y manteniéndolo para reducir decisiones y aumentar la velocidad del equipo.",
-        "Definí la estructura de trabajo del equipo UX en Figma: carpetas, versionado, ready-for-dev checklist y naming. Un flujo de entrega claro y replicable.",
-        "Colaboré con desarrollo para asegurar consistencia entre diseño e implementación.",
-        "Rediseñé el flujo de My Account de punta a punta (UI, arquitectura y funcionalidades), resolviendo el dolor visual y construyendo una base sólida para nuevas funcionalidades.",
-        "Referente del equipo UX en buenas prácticas de uso de Figma: autolayout, mobile-first, adopción de variables y consistencia del diseño.",
+        "Construí el Design System desde cero, priorizando consistencia y velocidad de entrega, estableciendo estructuras de trabajo en Figma (versionado, naming y checklist ready-for-dev).",
+        "Colaboré con desarrollo para garantizar fidelidad entre diseño e implementación en ciclos iterativos rápidos.",
+        "Rediseñé el flujo de My Account end-to-end (UI, arquitectura de información y funcionalidades), resolviendo deuda visual y construyendo las bases para soportar nuevas features.",
+        "Referente del equipo en buenas prácticas de Figma y diseño: layout, mobile-first, adopción de librerías y consistencia cross-platform.",
       ],
     },
     {
@@ -58,10 +57,11 @@ const es = {
       role: "UX/UI Designer",
       period: "2023 – 2024",
       description:
-        "Diseño de landing page para una marca de ropa inclusiva de Mendoza con foco en conversión e identidad.",
+        "Marca de ropa inclusiva de Mendoza.",
       bullets: [
-        "Diseñé una landing orientada a conversión con enfoque humano: imágenes reales y wording transparente sobre los talles.",
-        "Propuse marcos de trabajo y organicé las librerías, aportando estructura al proceso.",
+        "Diseñé la landing page con foco en conversión e identidad de marca, integrando un enfoque humano — imágenes reales y wording transparente — alineado a los valores de la organización.",
+        "Estructuré las librerías en Figma.",
+        "Propuse marcos de trabajo que ordenaron el proceso de entrega del equipo.",
       ],
     },
     {
@@ -69,10 +69,21 @@ const es = {
       role: "UX/UI Designer",
       period: "2023",
       description:
-        "Diseño de sitio web educativo para una organización en Quilmes.",
+        "Organización educativa de Quilmes.",
       bullets: [
-        "Diseñé un sitio que centraliza la oferta de cursos, facilitando el acceso a la información.",
-        "Proceso colaborativo con stakeholders desde el relevamiento hasta la entrega.",
+        "Diseñé el sitio web institucional centralizando la oferta de cursos para facilitar el acceso a la información.",
+        "Trabajé en un proceso colaborativo end-to-end junto a stakeholders, desde el relevamiento inicial hasta la entrega final.",
+      ],
+    },
+    {
+      company: "Foo Talent",
+      role: "UX/UI Designer",
+      period: "2023",
+      description:
+        "Plataforma de talento que conecta diseñadores con proyectos reales. Trabajo remoto en equipos multidisciplinarios.",
+      bullets: [
+        "Diseñé soluciones digitales end-to-end, desde entrevistas con personas y wireframes, hasta prototipos en high fidelity.",
+        "Alineé decisiones de diseño a objetivos de negocio en colaboración con producto y desarrollo.",
       ],
     },
   ],
@@ -231,16 +242,15 @@ const en: typeof es = {
   experience: [
     {
       company: "Altatienda",
-      role: "Product & Design System Designer",
+      role: "Product Designer & Design System Designer",
       period: "2024 – 2026",
       description:
-        "Argentine e-commerce platform. Founding member of the product team. Led the creation of the Design System from scratch, also acting as Product Designer on key flows.",
+        "Argentine e-commerce platform. Founding member of the product team, with a dual role: Design System Designer and Product Designer on key flows.",
       bullets: [
-        "Built the design system from scratch with a focus on scalability, iterating and maintaining it to reduce decisions and increase team velocity.",
-        "Defined the UX team's workflow in Figma: folder structure, versioning, ready-for-dev checklist and naming. A clear, replicable delivery process.",
-        "Collaborated with development to ensure consistency between design and implementation.",
-        "Redesigned the My Account flow end-to-end (UI, architecture and features), resolving visual pain points and building a solid foundation for new functionality.",
-        "UX team reference for Figma best practices: auto layout, mobile-first, variable adoption and design consistency.",
+        "Built the Design System from scratch, prioritizing consistency and delivery speed, establishing Figma workflows (versioning, naming, and ready-for-dev checklist).",
+        "Collaborated with development to ensure design-to-implementation fidelity across fast iterative cycles.",
+        "Redesigned the My Account flow end-to-end (UI, information architecture, and features), resolving visual debt and laying the foundation for new features.",
+        "Team reference for Figma and design best practices: layout, mobile-first, library adoption, and cross-platform consistency.",
       ],
     },
     {
@@ -248,10 +258,11 @@ const en: typeof es = {
       role: "UX/UI Designer",
       period: "2023 – 2024",
       description:
-        "Landing page design for an inclusive clothing brand from Mendoza focused on conversion and identity.",
+        "Inclusive clothing brand from Mendoza.",
       bullets: [
-        "Designed a conversion-oriented landing with a human approach: real images and transparent copy about sizing.",
-        "Proposed frameworks and organized libraries, adding structure to the process.",
+        "Designed the landing page focused on conversion and brand identity, integrating a human approach — real images and transparent copy — aligned with the organization's values.",
+        "Structured the Figma libraries.",
+        "Proposed frameworks that organized the team's delivery process.",
       ],
     },
     {
@@ -259,10 +270,21 @@ const en: typeof es = {
       role: "UX/UI Designer",
       period: "2023",
       description:
-        "Educational website design for an organization in Quilmes.",
+        "Educational organization in Quilmes.",
       bullets: [
-        "Designed a site that centralizes the course offering, making information more accessible.",
-        "Collaborative process with stakeholders from discovery to delivery.",
+        "Designed the institutional website centralizing the course offering to make information more accessible.",
+        "Led a collaborative end-to-end process with stakeholders, from initial discovery to final delivery.",
+      ],
+    },
+    {
+      company: "Foo Talent",
+      role: "UX/UI Designer",
+      period: "2023",
+      description:
+        "Talent platform connecting designers with real projects. Remote work in multidisciplinary teams.",
+      bullets: [
+        "Designed digital solutions end-to-end, from user interviews and wireframes to high-fidelity prototypes.",
+        "Aligned design decisions to business objectives in collaboration with product and development.",
       ],
     },
   ],

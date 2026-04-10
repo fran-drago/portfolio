@@ -184,7 +184,7 @@ const es = {
     ],
     closingStatement: ["¿Tenés una idea?", "Hablemos"],
     cv: { label: "CV", href: "https://drive.google.com/file/d/1BiFqDFwpqCv06OTs_ALObfItob2o8LaW/view?usp=sharing" },
-    downloadCv: "Descargar CV",
+    downloadCv: "Ver CV",
   },
 
   /* ─── Nav / Menu ─── */
@@ -416,7 +416,7 @@ const en: typeof es = {
     ],
     closingStatement: ["Got an idea?", "Let's talk"],
     cv: { label: "CV", href: "https://drive.google.com/file/d/1BiFqDFwpqCv06OTs_ALObfItob2o8LaW/view?usp=sharing" },
-    downloadCv: "Download CV",
+    downloadCv: "View CV",
   },
 
   /* ─── Nav / Menu ─── */

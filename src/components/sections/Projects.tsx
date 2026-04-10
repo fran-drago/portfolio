@@ -21,7 +21,7 @@ export function Projects() {
             href={project.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex flex-[1_0_0] flex-col gap-[var(--spacing-10)] items-start min-w-[250px]"
+            className="group flex flex-[1_0_0] flex-col gap-[var(--spacing-10)] items-start min-w-[250px] transition-transform duration-300 ease-out hover:-translate-y-1"
           >
             {/* Image */}
             <div className="relative aspect-[256/182] w-full overflow-hidden rounded-[var(--radius-16)]">
@@ -29,7 +29,7 @@ export function Projects() {
                 src={project.image}
                 alt={project.title}
                 fill
-                className="object-cover transition-transform duration-300 ease-out group-hover:scale-105"
+                className="object-cover"
                 unoptimized
               />
               {/* Shade overlay */}

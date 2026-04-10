@@ -90,7 +90,7 @@ const es = {
       description:
         "Marca de ropa inclusiva de Mendoza.",
       bullets: [
-        "Diseñé la landing page con foco en conversión e identidad de marca, integrando un enfoque humano — imágenes reales y wording transparente — alineado a los valores de la organización.",
+        "Diseñé la landing page con foco en conversión e identidad de marca, integrando un enfoque humano (imágenes reales y wording transparente) alineado a los valores de la organización.",
         "Estructuré las librerías en Figma.",
         "Propuse marcos de trabajo que ordenaron el proceso de entrega del equipo.",
       ],
@@ -322,7 +322,7 @@ const en: typeof es = {
       description:
         "Inclusive clothing brand from Mendoza.",
       bullets: [
-        "Designed the landing page focused on conversion and brand identity, integrating a human approach — real images and transparent copy — aligned with the organization's values.",
+        "Designed the landing page focused on conversion and brand identity, integrating a human approach (real images and transparent copy) aligned with the organization's values.",
         "Structured the Figma libraries.",
         "Proposed frameworks that organized the team's delivery process.",
       ],

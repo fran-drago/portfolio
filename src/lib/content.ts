@@ -27,15 +27,18 @@ const es = {
 
   /* ─── Hero ─── */
   heroStatement: {
-    lines: ["Hola 👋, soy", "Francisco Drago y"],
-    cycling: [
-      "Construyo sistemas que escalan",
-      "Diseño productos con impacto",
-    ],
+    prefix: "Diseño",
+    cycling: ["sistemas", "productos", "experiencias"],
+    middle: "con",
+    suffix: "propósito",
   },
 
   /* ─── About ─── */
-  bio: "Hola 👋, soy Fran Drago. Diseño productos que conectan con personas y negocio, y construyo los sistemas que los sostienen. Product & Design System Designer de Buenos Aires. Opero end-to-end: discovery, prototipado, testing y handoff.",
+  bioParagraphs: [
+    "Hola 👋, soy Fran Drago. Product & Design System Designer con base en Buenos Aires.",
+    "Construyo sistemas de diseño escalables y opero end-to-end con criterio, desde el primer wireframe hasta el handoff.",
+    "Diseño para personas, entendiendo los objetivos del negocio.",
+  ],
 
   /* ─── Experience ─── */
   experience: [
@@ -228,15 +231,18 @@ const en: typeof es = {
 
   /* ─── Hero ─── */
   heroStatement: {
-    lines: ["Hi 👋, I'm", "Francisco Drago and"],
-    cycling: [
-      "I build systems that scale",
-      "I design products with impact",
-    ],
+    prefix: "I design",
+    cycling: ["systems", "products", "experiences"],
+    middle: "with",
+    suffix: "purpose",
   },
 
   /* ─── About ─── */
-  bio: "Hi 👋, I'm Fran Drago. I design products that connect people with business goals, and build the systems that sustain them. Product & Design System Designer based in Buenos Aires. Operating end-to-end: discovery, prototyping, testing and handoff.",
+  bioParagraphs: [
+    "Hi 👋, I'm Fran Drago. Product & Design System Designer based in Buenos Aires.",
+    "I build scalable design systems and operate end-to-end with intention, from the first wireframe to handoff.",
+    "I design for people, understanding business goals.",
+  ],
 
   /* ─── Experience ─── */
   experience: [

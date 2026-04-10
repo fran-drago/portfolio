@@ -313,21 +313,13 @@ html.theme-transition *::after {
   font-weight: 500;
 }
 
-/* type/display/hero — Bricolage Grotesque, medium, tight tracking
-   mobile: 20px/28px (matches Responsive frame) → desktop: 24px/32px (matches Desktop frame) */
+/* type/display/hero — Bricolage Grotesque, medium, tight tracking, 24px fixed */
 .type-display-hero {
   font-family: var(--font-heading);
-  font-size: 1.25rem;                          /* 20px — mobile */
-  line-height: var(--line-height-lg);          /* 28px */
+  font-size: var(--font-size-xl);              /* 24px — fixed, no responsive scaling */
+  line-height: var(--line-height-xl);          /* 32px */
   letter-spacing: var(--letter-spacing-tight-heading);
   font-weight: 500;
-}
-
-@media (min-width: 640px) {
-  .type-display-hero {
-    font-size: var(--font-size-xl);            /* 24px — desktop */
-    line-height: var(--line-height-xl);        /* 32px */
-  }
 }
 
 /* type/label/section — 14px/20px, medium, widest tracking, uppercase */

@@ -7,10 +7,11 @@ interface ButtonProps {
   label: string;
   icon?: boolean;
   href?: string;
+  external?: boolean;
   onClick?: () => void;
 }
 
-export function Button({ label, icon = false, href, onClick }: ButtonProps) {
+export function Button({ label, icon = false, href, external = false, onClick }: ButtonProps) {
   const className = "group inline-flex items-center p-[var(--spacing-10)] rounded-[var(--radius-md)] bg-primary text-base transition-[background-color,border-radius] duration-[125ms] ease-in hover:bg-primary-subtle hover:rounded-[var(--radius-2)] overflow-hidden";
 
   const content = (
@@ -28,7 +29,7 @@ export function Button({ label, icon = false, href, onClick }: ButtonProps) {
 
   if (href) {
     return (
-      <a href={href} className={className} rel="noopener noreferrer">
+      <a href={href} className={className} {...(external && { target: "_blank", rel: "noopener noreferrer" })}>
         {content}
       </a>
     );

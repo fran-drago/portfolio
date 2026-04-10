@@ -41,7 +41,7 @@ export function Contact() {
       </address>
 
       <div className="mt-[var(--spacing-32)]" data-reveal>
-        <Button label={contact.downloadCv} icon href={contact.cv.href} />
+        <Button label={contact.downloadCv} icon href={contact.cv.href} external />
       </div>
 
       <p className="type-body-base text-secondary-foreground mt-[var(--spacing-32)]" data-reveal>

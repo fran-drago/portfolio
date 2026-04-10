@@ -14,14 +14,14 @@ export function Projects() {
         {sections.projects}
       </h2>
 
-      <div className="flex flex-wrap gap-[var(--spacing-16)] items-start" data-reveal>
+      <div className="flex flex-wrap gap-[var(--spacing-24)] items-start" data-reveal>
         {projects.map((project) => (
           <a
             key={project.href}
             href={project.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex flex-[1_0_0] flex-col gap-[var(--spacing-10)] items-start min-w-[250px] transition-transform duration-300 ease-out hover:-translate-y-1"
+            className="group flex flex-[1_0_0] flex-col gap-[var(--spacing-10)] items-start min-w-[246px] h-fit transition-transform duration-300 ease-out hover:-translate-y-1"
           >
             {/* Image */}
             <div className="relative aspect-[256/182] w-full overflow-hidden rounded-[var(--radius-16)]">

@@ -183,7 +183,7 @@ const es = {
       },
     ],
     closingStatement: ["¿Tenés una idea?", "Hablemos"],
-    cv: { label: "CV", href: "https://drive.google.com/file/d/1BiFqDFwpqCv06OTs_ALObfItob2o8LaW/view?usp=sharing" },
+    cv: { label: "CV", href: "https://drive.google.com/file/d/1-nKPY8udAmKLW1WYC_kBkskOwBpMx9U1/view?usp=sharing" },
     downloadCv: "Ver CV",
   },
 
@@ -415,7 +415,7 @@ const en: typeof es = {
       },
     ],
     closingStatement: ["Got an idea?", "Let's talk"],
-    cv: { label: "CV", href: "https://drive.google.com/file/d/1BiFqDFwpqCv06OTs_ALObfItob2o8LaW/view?usp=sharing" },
+    cv: { label: "CV", href: "https://drive.google.com/file/d/1hG_G83yzX41T2e5uhH3wnUeSy24uvxup/view?usp=sharing" },
     downloadCv: "View CV",
   },
 

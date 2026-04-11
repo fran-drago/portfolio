@@ -36,7 +36,7 @@ const es = {
   /* ─── About ─── */
   bioParagraphs: [
     "Hola 👋, soy Fran Drago. Product & Design System Designer con base en Buenos Aires.",
-    "Construyo sistemas de diseño escalables y opero end-to-end con criterio, desde el primer wireframe hasta el handoff.",
+    "Construyo sistemas de diseño escalables y diseño experiencias de producto intuitivas, operando end-to-end desde la idea hasta el handoff.",
     "Diseño para personas, entendiendo los objetivos del negocio.",
   ],
 
@@ -268,7 +268,7 @@ const en: typeof es = {
   /* ─── About ─── */
   bioParagraphs: [
     "Hi 👋, I'm Fran Drago. Product & Design System Designer based in Buenos Aires.",
-    "I build scalable design systems and operate end-to-end with intention, from the first wireframe to handoff.",
+    "I build scalable design systems and design intuitive product experiences, operating end-to-end from idea to handoff.",
     "I design for people, understanding business goals.",
   ],
 
